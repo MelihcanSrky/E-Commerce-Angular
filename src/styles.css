@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/primeflex/primeflex.css";
+@import "../node_modules/primeflex/primeflex.min.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+:root {
+  --secondary: #F5F5F5;
+  --red-color: #DB4444;
+}
+
+body {
+  margin: 0;
+}
+
+.image-background {
+  background: #CBE4E8;
+}
+
+.red-button-text {
+  color: var(--red-color);
+}
+
+.red-button-bg {
+  background: var(--red-color);
+}
+
+.p-tabmenu .p-tabmenu-nav {
+  border: none;
+}
+
+.p-menuitem-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.p-inputtext {
+  padding: 10px 20px;
+  font-size: 0.75rem;
+  border: none;
+}
+
+.search-field {
+  background: var(--secondary);
+}
