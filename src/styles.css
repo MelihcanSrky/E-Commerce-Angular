@@ -34,6 +34,11 @@ body {
   line-height: 1.5rem;
 }
 
+.p-menuitem-link-active .p-menuitem-text {
+  border-bottom: 2px solid red;
+  padding-bottom: 2px;
+}
+
 .p-inputtext {
   padding: 10px 20px;
   font-size: 0.75rem;
@@ -42,4 +47,12 @@ body {
 
 .search-field {
   background: var(--secondary);
+}
+
+.p-megamenu {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  border: none;
+  border-right: 1px solid #00000030;
 }

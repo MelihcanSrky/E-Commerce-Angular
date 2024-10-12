@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { InputTextModule } from 'primeng/inputtext';
 import { TabMenuModule } from 'primeng/tabmenu';
@@ -12,9 +13,14 @@ import { TabMenuModule } from 'primeng/tabmenu';
 })
 export class HeaderComponent {
 
+  constructor(private router: Router) { }
+
   items: MenuItem[] = [
     {
-      label: 'Home'
+      label: 'Home',
+      command: () => {
+        this.router.navigate([''])
+      }
     },
     {
       label: 'Contact'
@@ -23,7 +29,10 @@ export class HeaderComponent {
       label: 'About'
     },
     {
-      label: 'Sign Up'
+      label: 'Sign Up',
+      command: () => {
+        this.router.navigate(['/login'])
+      }
     },
   ];
 

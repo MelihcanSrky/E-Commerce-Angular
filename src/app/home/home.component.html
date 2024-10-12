@@ -1,0 +1,10 @@
+<div>
+  <div class="flex flex-row px-8 justify-content-around">
+    <p-megaMenu [model]='items' orientation='vertical' />
+    <p-carousel class="w-7 p-5" [value]='products' [numVisible]='1' [circular]='true' [autoplayInterval]='3000'>
+      <ng-template let-product pTemplate='item'>
+        <img src="{{product.image}}" />
+      </ng-template>
+    </p-carousel>
+  </div>
+</div>
